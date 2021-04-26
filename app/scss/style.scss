@@ -5,6 +5,89 @@
 @import 'global';
 
 
+.header{
+  height: 100vh;
+  background: linear-gradient(194.01deg, #D9E8EF 9.6%, #EAF2F5 89.64%);
+  &-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 72px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  &-logo__link{
+    display: flex;
+    margin-left: 109px;
+  }
+  &-nav__list{
+    display: flex;
+  }
+  &-nav__item+.header-nav__item {
+    margin-left: 32px;
+  }
+  &-nav__link{
+    padding: 10px 13px;
+    @extend %manrope-500;
+    font-size: 14px;
+    color: #18191F;
+    transition: all .3s;
+    &:hover {
+      color: #fff;
+      background-color: #183181;
+      border-radius: 20px
+    }
+  }
+  &-content{
+    padding-top: 290px;
+    max-width: 540px;
+  }
+  &-content__title{
+    font-size: 72px;
+    line-height: 98px;
+    @extend %manrope-800;
+    margin-bottom: 15px;
+  }
+  &-content__text{
+    font-size: 18px;
+    line-height: 32px;
+    @extend %manrope-500;
+    margin-bottom: 20px;
+  }
+  &-content__link{
+    display: flex;
+    align-items: center;
+  }
+  &-content__img{
+    margin-right: 95px;
+  }
+  &-content__text-descr{
+    position: relative;
+    @extend %manrope-600;
+    color: #18191F;
+    text-transform: uppercase;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 2px;
+      background-color: #18191F;
+      top: 10px;
+      left: -90px;
+    }
+  }
+  &-content__img-bg{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+}
+
 
 
 @import 'media';
