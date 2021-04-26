@@ -88,6 +88,25 @@
   
 }
 
+.info{
+  &-wrapper{
+    display: flex;
+    justify-content: space-between
+  }
+  &-item{
+    margin: 60px 0;
+  }
+  &-item__title{
+    @extend %manrope-700;
+    font-size: 48px;
+    line-height: 64px;
+  }
+  &-item__link{
+    @extend %manrope-500;
+    color: #18191F;
+  }
+}
+
 
 
 @import 'media';
