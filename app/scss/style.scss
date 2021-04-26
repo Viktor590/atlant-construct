@@ -118,12 +118,13 @@
     font-size: 48px;
     line-height: 64px;
     margin-bottom: 50px;
+    text-transform: uppercase;
   }
   &-wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px 30px;
-    margin-bottom: 80px;
+    margin-bottom: 80px; 
   }
   &-item{
     width: 255px;
@@ -137,6 +138,112 @@
     @extend %manrope-500;
     padding: 24px 0 0 24px;
     color: #18191F
+  }
+}
+
+.calc{
+  margin-bottom: 80px;
+  &-link>img{
+    width: 100%;
+  }
+}
+
+.project{
+  &-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px 100px;
+  }
+  &-item{
+    max-width: 500px;
+    border-bottom: 1px solid #F4F5F7;
+    padding-bottom: 26px;
+  }
+  &-item__title{
+    font-size: 28px;
+    line-height: 40px;
+    @extend %manrope-600;
+    margin-bottom: 25px;
+    span{
+      @extend %manrope-400;
+    }
+  }
+  &-item__img{
+    width: 500px;
+    height: 375px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  &-item__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item__data{
+    font-size: 14px;
+    @extend %manrope-400;
+  }
+  &-item__link{
+    padding: 10px 17px;
+    background-color: #183181;
+    color: #fff;
+    font-size: 14px;
+    @extend %manrope-400;
+    border-radius: 30px
+  }
+  &-item__btn{
+    text-align: center;
+    margin: 90px 0 30px;
+  }
+}
+
+.info-company{
+  &__wrapper{
+    display: flex;
+    background-image: url('../images/bg-info-company.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+    align-items: center;
+    margin-top: 100px;
+  }
+  &__content{
+    margin-left: 100px;
+  }
+  &__img{
+    transform: translate(130px, -77px);
+  }
+  &__content-subtitle{
+    @extend %manrope-600;
+    font-size: 14px;
+    color: #183181;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  &__content-title{
+    margin-bottom: 30px;
+  }
+  &__conten-text{
+    font-size: 18px;
+    line-height: 32px;
+    @extend %manrope-400;
+    margin-bottom: 30px;
+  }
+  &__content-link{
+    font-size: 20px;
+    line-height: 30px;
+    color: #183181;
+    @extend %manrope-500;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/arrow.svg');
+      width: 22px;
+      height: 14px;
+      top: 8px;
+      right: -40px;
+    }
   }
 }
 
