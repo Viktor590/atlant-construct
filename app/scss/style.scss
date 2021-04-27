@@ -351,5 +351,83 @@
   }
 }
 
+.footer{
+  background-color: #0B0D17;
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
+  &__copyright{
+    font-size: 14px;
+    line-height: 24px;
+    @extend %manrope-500;
+    color: #D9DBE1;
+    margin-bottom: 10px;
+    display: block;
+    max-width: 120px;
+  }
+  &__reserved{
+    font-size: 14px;
+    line-height: 24px;
+    @extend %manrope-500;
+    color: #D9DBE1;
+    margin-bottom: 40px;
+  }
+  &__connection{
+    display: flex;
+  }
+  &__connection-link{
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #141414;
+    margin-right: 16px;
+  }
+  &__connection-img{
+    margin: 10px auto;
+  }
+  &__info{
+    display: flex;
+  }
+  &__nav{
+    margin-right: 50px;
+  }
+  &__nav-title{
+    font-size: 20px;
+    line-height: 30px;
+    @extend %manrope-500;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+  &__nav-item{
+    margin-bottom: 11px;
+  }
+  &__nav-link{
+    line-height: 26px;
+    color: #D9DBE1;
+    @extend %manrope-400;
+  }
+  &__nav-input{
+    width: 255px;
+    padding: 10px 40px 10px 15px;
+    background-color: #141414;
+    color: #D9DBE1;
+    font-size: 14px;
+    @extend %manrope-400;
+    border: none;
+    border-radius: 10px;
+  }
+  &__nav-btn{
+    border: none;
+    background-color: inherit;
+    margin-left: -40px;
+    cursor: pointer;
+    transform: translateY(5px)
+  }
+
+}
+
 
 @import 'media';
