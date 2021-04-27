@@ -248,6 +248,9 @@
 }
 
 .commercial{
+  &__wrapper{
+    margin-bottom: 180px;
+  }
   &__item{
     background-color: #408EC7;
     border-radius: 20px;
@@ -291,6 +294,26 @@
     transform: translateY(-77%)
   }
 
+}
+
+.gallery{
+  &__title{
+    @extend %manrope-700;
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 40px;
+  }
+  &__inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 15px;
+    margin-bottom: 100px;
+  }
+  &__img{
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+  }
 }
 
 
