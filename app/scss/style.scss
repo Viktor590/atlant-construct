@@ -247,5 +247,51 @@
   }
 }
 
+.commercial{
+  &__item{
+    background-color: #408EC7;
+    border-radius: 20px;
+    margin-top: 100px;
+  }
+  &__item-title{
+    padding: 40px 0 35px 48px;
+    @extend %manrope-700;
+    font-size: 40px;
+    line-height: 54px;
+    color: #fff;
+  }
+  &__item-text{
+    @extend %manrope-500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #F1F2F6;
+    max-width: 445px;
+    padding: 0 0 38px 48px;
+  }
+  &__item-link{
+    @extend %manrope-600;
+    font-size: 30px;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    padding: 0 0 35px 48px;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/arrow-big.svg');
+      width: 33px;
+      height: 21px;
+      top: 10px;
+      right: -60px;
+    }
+  }
+  &__img-phone{
+    position: absolute;
+    right: 23%;
+    transform: translateY(-77%)
+  }
+
+}
+
 
 @import 'media';
