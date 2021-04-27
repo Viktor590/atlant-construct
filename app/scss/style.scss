@@ -316,5 +316,40 @@
   }
 }
 
+.partners{
+  background-color: #F4F5F7;
+  &__title{
+    padding: 60px 0 10px;
+    @extend %manrope-700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+  }
+  &__subtitle{
+    @extend %manrope-500;
+    font-size: 18px;
+    line-height: 32px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+  &__item-link{
+    display: block;
+    width: 170px;
+    height: 96px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 25px;
+  }
+  &__item-img{
+    padding: 40px 50px;
+  }
+}
+
 
 @import 'media';
