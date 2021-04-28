@@ -436,14 +436,14 @@
   }
   &__item-link{
     display: block;
-    width: 170px;
+    max-width: 170px;
     height: 96px;
     background-color: #fff;
     border-radius: 15px;
     margin-bottom: 25px;
   }
   &__item-img{
-    padding: 40px 50px;
+    padding: 40px 30px;
   }
 }
 
