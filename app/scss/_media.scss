@@ -33,6 +33,19 @@
       font-size: 12px;
     }
   }
+  .info{
+    &-item{
+      max-width: 150px;
+      margin: 15px 0;
+    }
+    &-item__title{
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &-item__link{
+      font-size: 14px;
+    }
+  }
 }
 
 @media(max-width: 769px){
@@ -87,6 +100,15 @@
     &-content__text{
       font-size: 15px;
       line-height: 26px;
+    }
+  }
+  .info{
+    &-wrapper{
+      display: block;
+      text-align: center;
+    }
+    &-item{
+      max-width: 100%;
     }
   }
 }
