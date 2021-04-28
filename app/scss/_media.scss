@@ -63,6 +63,14 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+  .calc{
+    &__finish-title,
+    &__work-title{
+      font-size: 30px;
+      line-height: 46px;
+      max-width: 385px;
+    }
+  }
 }
 
 @media(max-width: 769px){
@@ -109,9 +117,22 @@
   .build {
     &-wrapper {
       grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 40px;
     }
     &-title{
       font-size: 25px;
+    }
+  }
+  .calc{
+    display: block;
+    margin-bottom: 40px;
+    &__finish-text,
+    &__work-text{
+      max-width: 200px;
+    }
+    &__finish-btn,
+    &__work-btn{
+      margin-bottom: 20px;
     }
   }
 }
