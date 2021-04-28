@@ -99,6 +99,7 @@
     background-color: #000;
     margin-top: 18px;
     display: block;
+    transition: all .4s;
   }
   &-burger__btn::after{
     content: '';
@@ -204,6 +205,7 @@
   }
   &__finish-btn{
     display: inline-block;
+    text-align: center;
     padding: 20px 0;
     width: 200px;
     background-color: #fff;
@@ -236,6 +238,7 @@
   }
   &__work-btn{
     display: inline-block;
+    text-align: center;
     padding: 20px 0;
     width: 200px;
     background-color: #242A78;

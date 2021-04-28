@@ -12,7 +12,7 @@ $(function () {
   wow.init();
 
     $('.header-burger').on('click', function () {
-      $('.header-nav__list').toggleClass('active')
+      $('.header-nav__list, .header-burger__btn').toggleClass('active')
     });
 
 });

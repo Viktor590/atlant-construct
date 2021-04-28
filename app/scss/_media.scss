@@ -159,6 +159,17 @@
       display: block;
       z-index: 3;
     }
+    &-burger__btn.active{
+      background-color: #fff;
+    }
+    &-burger__btn.active::after{
+      transform: rotate(-45deg);
+      bottom: 19px;
+    }
+    &-burger__btn.active::before {
+      transform: rotate(45deg);
+      top: 19px;
+    }
     &-nav__item{
      padding-bottom: 30px;
     }
