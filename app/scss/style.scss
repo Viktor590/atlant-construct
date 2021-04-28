@@ -204,7 +204,8 @@
   }
   &__finish-btn{
     display: inline-block;
-    padding: 18px 39px;
+    padding: 20px 0;
+    width: 200px;
     background-color: #fff;
     color: #39373A;
     @extend %manrope-500;
@@ -235,7 +236,8 @@
   }
   &__work-btn{
     display: inline-block;
-    padding: 18px 39px;
+    padding: 20px 0;
+    width: 200px;
     background-color: #242A78;
     color: #fff;
     @extend %manrope-500;
