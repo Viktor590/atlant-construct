@@ -30,6 +30,20 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+  .info-company{
+    &__content{
+      margin-left: 10px;
+    }
+    &__content-title{
+      font-size: 35px;
+      line-height: 45px;
+    }
+    &__conten-text{
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 16px;
+    }
+  }
 }
 
 @media(max-width: 950px){
@@ -79,6 +93,14 @@
       font-size: 20px;
       line-height: 30px;
       margin-bottom: 10px;
+    }
+  }
+  .info-company{
+    &__wrapper{
+      display: block;
+    }
+    &__img{
+      transform: translateY(0);
     }
   }
 }
