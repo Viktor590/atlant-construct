@@ -43,7 +43,8 @@
     }
   }
   &-content{
-    padding-top: 290px;
+    position: absolute;
+    bottom: 10%;
     max-width: 540px;
   }
   &-content__title{
