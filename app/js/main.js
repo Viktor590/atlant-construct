@@ -11,4 +11,8 @@ $(function () {
   )
   wow.init();
 
+    $('.header-burger').on('click', function () {
+      $('.header-nav__list').toggleClass('active')
+    });
+
 });
